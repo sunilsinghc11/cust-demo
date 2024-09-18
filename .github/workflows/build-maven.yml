@@ -43,7 +43,7 @@ jobs:
           - name: Configure Maven
             run: |
                   jf rt ping
-                  exit 0
+                  exit 1
 
           - name: Configure Maven
             run: jf mvnc --repo-deploy-releases $JFROG_PLATFORM_REPO --repo-deploy-snapshots $JFROG_PLATFORM_REPO --repo-resolve-releases $JFROG_PLATFORM_REPO --repo-resolve-snapshots $JFROG_PLATFORM_REPO
