@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - dev
+      - oidc-test
   pull_request:
     branches:
       - main
