@@ -37,10 +37,12 @@ jobs:
                   JF_URL: https://${{ vars.JF_URL }}/
                   JF_PROJECT: mgm-project
             with:
-                    oidc-provider-name: mgm-demo 
-                    oidc-audience: mgm-demo-aud
+                    oidc-provider-name: oidc-project-config 
+                    oidc-audience: oidc-project-aud
+                    #oidc-provider-name: mgm-demo 
+                    #oidc-audience: mgm-demo-aud
          
-          - name: Configure Maven
+          - name: Validate Connection
             run: |
                   jf rt ping
                   echo "Sucessfully Authenticated."
